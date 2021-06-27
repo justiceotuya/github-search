@@ -1,2 +1,7 @@
 import { Pagination } from './Pagination';
-export { Pagination }
+import { Result } from './Result';
+import { ResultNoData } from './ResultNoData';
+import { Search } from './Search';
+export {
+  Pagination, Result, ResultNoData, Search
+}

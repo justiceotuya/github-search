@@ -93,14 +93,14 @@ color: #0A1F44;
 }
 `
 
-export const ArrowUpIcon = styled(SortIcon) <{ sortType: TSortType }>`
+export const ArrowUpIcon = styled(SortIcon) <{ $sortType: TSortType }>`
 transform: rotateX(180deg);
     width: 10px;
     height: 8px;
-    color: ${props => props.sortType === "ASC" && "#00A6EF"}
+    color: ${props => props.$sortType === "ASC" && "#00A6EF"}
 `
-export const ArrowDownIcon = styled(SortIcon) <{ sortType: TSortType }>`
+export const ArrowDownIcon = styled(SortIcon) <{ $sortType: TSortType }>`
    width: 10px;
     height: 8px;
-    color: ${props => props.sortType === "DESC" && "#00A6EF"}
+    color: ${props => props.$sortType === "DESC" && "#00A6EF"}
 `;

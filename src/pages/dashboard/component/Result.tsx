@@ -15,8 +15,8 @@ export const Result = (props: IResultProps) => {
               Name
             </span>
             <span className="SortIcon">
-              <ArrowUpIcon sortType={sortType} />
-              <ArrowDownIcon sortType={sortType} />
+              <ArrowUpIcon $sortType={sortType} />
+              <ArrowDownIcon $sortType={sortType} />
             </span>
 
           </th>
