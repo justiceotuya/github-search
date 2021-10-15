@@ -5,7 +5,7 @@
 This app was created as part of Chingu solo project. it pulls data from
 [Github](https://github.com)
 
-**Live Link**  [Github Users Search](https://scalio-assesment.vercel.app).
+**Live Link**  [Github Users Search](https://github-search-new.vercel.app/).
 
 ## Features
 
