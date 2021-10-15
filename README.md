@@ -1,11 +1,29 @@
-# Scalio Assesment
+# Github Users Search
 
-The hosted result can be found on  [Scalio Assessment](https://scalio-assesment.vercel.app).
+## Overview
 
-This made use of Debounced search where the input listens for users action and then serches for users login after a delay from the user.
+This app was created as part of Chingu solo project. it pulls data from
+[Github](https://github.com)
 
-There is no search button, but the search responds to users behavior.
+**Live Link**  [Github Users Search](https://scalio-assesment.vercel.app).
 
-Basic Pagination is also included as well as sorting via login
+## Features
 
-StyledComponents was used in styling.
+- Debounced Search
+- Result List
+- Basic Pagination
+
+## Running The Project
+
+1. Clone the project locally.
+2. Run `npm install` in your bash/command line
+3. Run `npm start` in your bash/command line
+
+## Dependencies
+
+- React
+- React-Dom
+- Styled-Components
+- Typescript
+- Nock
+- Jest

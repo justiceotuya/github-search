@@ -78,8 +78,7 @@ color: #0A1F44;
 
 
 @media screen and (min-width: 700px){
-    height: calc(100vh - 200px);
-
+height: calc(100vh - 350px);
     .dashboard__table {
    width: calc(100% - 100px);
  margin: 20px 50px 0 50px;

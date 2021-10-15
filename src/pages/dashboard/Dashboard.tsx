@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useDebounce } from '../../hooks';
+import { Pagination } from './component';
 import { Result } from './component/Result';
 import { ResultNoData } from './component/ResultNoData';
 import { Search } from './component/Search';
@@ -49,7 +50,7 @@ export const Dashboard = () => {
           setSearchError(response.message)
           setSearchStatus("ERROR")
         }
-      } catch (error) {
+      } catch (error: any) {
         setSearchError(error.message)
         setSearchStatus("ERROR")
       }
@@ -107,6 +108,7 @@ export const Dashboard = () => {
   return (
     <StyledDashboard>
       <div className="dashboard__container">
+      <h1 className="app__title">Github Users Search</h1>
         <Search
           searchInput={searchInput}
           handleSearchInput={handleSearchInput}
@@ -118,7 +120,7 @@ export const Dashboard = () => {
           searchResult={searchResult}
         />
 
-        <Result
+       <Result
           searchStatus={searchStatus}
           searchResult={searchResult}
           handleSortResult={handleSortResult}
@@ -127,6 +129,13 @@ export const Dashboard = () => {
           handlePageNavigation={handlePageNavigation}
           totalPage={totalPage}
         />
+
+
+    <Pagination
+      totalPage={totalPage}
+      currentPage={currentPage}
+      handlePageNavigation={handlePageNavigation}
+    />
       </div>
     </StyledDashboard>
   )

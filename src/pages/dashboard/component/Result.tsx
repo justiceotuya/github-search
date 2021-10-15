@@ -39,11 +39,6 @@ export const Result = (props: IResultProps) => {
     </table>
 
 
-    <Pagination
-      totalPage={totalPage}
-      currentPage={currentPage}
-      handlePageNavigation={handlePageNavigation}
-    />
 
   </StyledResult> : null
 }
